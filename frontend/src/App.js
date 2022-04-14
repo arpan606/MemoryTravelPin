@@ -105,9 +105,9 @@ console.log(newPin);
     <div className="App">
      <ReactMapGL style={{width:"100%",height:"100%"}}
      {...viewport}
-     mapboxApiAccessToken={'pk.eyJ1IjoiYXJwYW4wNjA2IiwiYSI6ImNreXE1NjhmdzBnbnEybm1kNXNoZGQ2MTQifQ.VSaa7Z5y4WKz8WcQhfjv_A'}
+
      onViewportChange={(nextViewport)=>setViewport(nextViewport)}
-     mapStyle="mapbox://styles/safak/cknndpyfq268f17p53nmpwira"
+    
      onDblClick={handleAddClick}>
      {
        pins.map(p=>(
