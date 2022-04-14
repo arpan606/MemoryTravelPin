@@ -1,0 +1,142 @@
+.App{
+  height:100vh;
+  width:100vw;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.card{
+  width:250px;
+  height:250px;
+  display:flex;
+  flex-direction:column;
+  justify-content: space-around;
+}
+
+label{
+  width:max-content;
+  color:slateblue;
+  font-size: 13px;
+  border-bottom: 0.4px solid #000000;
+  margin:3px 0;
+}
+
+.desc{
+  font-size:14px;
+}
+
+.star{
+  color:gold;
+}
+
+
+form{
+  width:250px;
+  height:250px;
+  display:flex;
+  flex-direction: column;
+  justify-content:space-between;
+
+}
+
+input{
+  border:none;
+  border-bottom: 1px solid gray;
+}
+
+input::placeholder,textarea::placeholder{
+  font-size: 12px;
+  color:#000000;
+}
+
+textarea{
+  border:none;
+  border-bottom: 1px solid gray;
+  resize:none;
+}
+
+.submitbutton{
+  background-color :slateblue;
+  color:white;
+  border:none;
+  padding:5px;
+}
+
+.button{
+  border:none;
+  padding:5px;
+  border-radius:5px;
+  color:white;
+  font-style: poppins;
+}
+
+.logout{
+  background-color: #000000;
+
+}
+
+.login{
+  background-color: #000000;
+    margin-right: 5px;
+}
+
+.register{
+  background-color: #000000;
+}
+
+.buttons,.logout{
+  position:absolute;
+  top:10px;
+  right:80px;
+}
+
+
+.warningContainer{
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  background: rgba(0,0,0,0.5);
+  z-index: 10;
+  place-items:center;
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+}
+
+.warning_contA{
+  width:150px;
+  height:150px;
+  background: #ffffff;
+  border:1px solid #EEEEEE;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.warning_contA_close{
+  height:25px;
+  width:25px;
+  border-radius: 100%;
+  color:#ffffff;
+  background: #000000;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 25px;
+  text-align: center;
+  margin-left: 80%;
+  cursor: pointer;
+}
+
+.warning_contA_message{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  color:tomato;
+  font-style: normal;
+  font-weight:300;
+}
